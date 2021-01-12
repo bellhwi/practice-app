@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bin2Dec</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1>Bin2Dec</h1>
+            <label for="binary" class="binary">Binary</label>   
+            <span class="errorText" id="errorText">You can only type 1 or 0.</span>           
+                <input type="text" id="binary">
+            <label for="decimal" class="decimal">Decimal</label>
+                <input type="text" id="decimal" readonly >
+   
+        <button onclick="convertToDecimal()">Convert</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>

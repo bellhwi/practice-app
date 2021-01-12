@@ -1,0 +1,32 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+.binary,
+.decimal {
+  display: block;
+  outline: none;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.errorText {
+  display: none;
+  font-size: 12px;
+  color: red;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+}
