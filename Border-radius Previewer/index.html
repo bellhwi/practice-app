@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border-radius Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <h1>Border-radius Previewer</h1>
+        <input type="text" class="box" id="box" readonly>
+
+        <div class="printRadius" id="printRadius">
+            <span class="printLtRadius" id="printLtRadius"></span>
+            <span class="printLbRadius" id="printLbRadius"></span>
+            <span class="printRtRadius" id="printRtRadius"></span>
+            <span class="printRbRadius" id="printRbRadius"></span>
+        </div>
+
+        <button onclick="CopyToClipboard('printRadius')">Copy</button>
+
+        <div class="radius-input" id="radius-input">
+            <label for="left-top-radius">left-top:</label>
+                <input type="text" class="left-top-radius" id="left-top-radius">
+            <label for="left-bottom-radius">left-bottom:</label>
+                <input type="text" class="left-bottom-radius" id="left-bottom-radius">
+            <label for="right-top-radius">right-top:</label>
+                <input type="text" class="right-top-radius" id="right-top-radius">
+            <label for="right-bottom-radius">right-bottom:</label>
+                <input type="text" class="right-bottom-radius" id="right-bottom-radius">
+        </div>
+    </div>
+
+    <div class="notification-container" id="notification-container">
+        <p>Copy success!</p>
+    </div>
+
+    
+        
+    <script src="script.js"></script>
+</body>
+</html>

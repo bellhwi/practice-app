@@ -14,7 +14,9 @@ function convertToDecimal() {
         errorText.style.display = 'none';
     } else if(binary === "") {
         errorText.style.display = 'none';
+        decimal.value = "";
     } else {
         errorText.style.display = 'block';
+        decimal.value = "";
     }
 }
