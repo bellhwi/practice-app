@@ -1,5 +1,4 @@
 const box = document.getElementById('box');
-const copyText = document.getElementById('printRadius');
 
 function setRadius() {
   let ltRadius = document.getElementById('left-top-radius');
