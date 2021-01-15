@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: black;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+  border-spacing: 5px;
+  color: white;
+}
+
+input {
+  text-align: right;
+}
+
+td:not(.display) {
+  box-sizing: border-box;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: solid;
+}
+
+td:not(.btn-0) {
+  text-align: center;
+}
