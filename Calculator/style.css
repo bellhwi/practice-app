@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -8,6 +10,7 @@ body {
   justify-content: center;
   min-height: 100vh;
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container {
@@ -21,18 +24,56 @@ table {
   color: white;
 }
 
-input {
-  text-align: right;
+.display {
+  font-size: 100px;
+  color: white;
 }
 
-td:not(.display) {
+td:not(.btn-0) {
   box-sizing: border-box;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
-  border: solid;
 }
 
 td:not(.btn-0) {
   text-align: center;
+}
+
+.btn-0 {
+  border-width: 2px 4px;
+  border-radius: 40px;
+  padding-left: 26px;
+}
+
+.btn-0,
+.btn-1,
+.btn-2,
+.btn-3,
+.btn-4,
+.btn-5,
+.btn-6,
+.btn-7,
+.btn-8,
+.btn-9,
+.btn-dot {
+  background-color: #383838;
+  font-size: 30px;
+}
+
+.btn-ac,
+.btn-ngt,
+.btn-per {
+  background-color: #bababa;
+  color: black;
+  font-size: 25px;
+}
+
+.btn-dvd,
+.btn-mlt,
+.btn-min,
+.btn-pls,
+.btn-eql {
+  background-color: orange;
+  font-size: 35px;
 }
