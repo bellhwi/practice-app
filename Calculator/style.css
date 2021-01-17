@@ -11,6 +11,13 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
+
+  /* 드래그 불가 */
+  -ms-user-select: none;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .container {
@@ -27,6 +34,10 @@ table {
 .display {
   font-size: 100px;
   color: white;
+}
+
+td {
+  cursor: default;
 }
 
 td:not(.btn-0) {
@@ -58,7 +69,39 @@ td:not(.btn-0) {
 .btn-9,
 .btn-dot {
   background-color: #383838;
+  transition: background 0.3s;
   font-size: 30px;
+}
+
+.btn-0:hover,
+.btn-1:hover,
+.btn-2:hover,
+.btn-3:hover,
+.btn-4:hover,
+.btn-5:hover,
+.btn-6:hover,
+.btn-7:hover,
+.btn-8:hover,
+.btn-9:hover,
+.btn-dot:hover {
+  background: #8c8c8c radial-gradient(circle, transparent 1%, #8c8c8c 1%)
+    center/15000%;
+}
+
+.btn-0:active,
+.btn-1:active,
+.btn-2:active,
+.btn-3:active,
+.btn-4:active,
+.btn-5:active,
+.btn-6:active,
+.btn-7:active,
+.btn-8:active,
+.btn-9:active,
+.btn-dot:active {
+  background-color: #383838;
+  background-size: 100%;
+  transition: background 0s;
 }
 
 .btn-ac,
@@ -66,7 +109,23 @@ td:not(.btn-0) {
 .btn-per {
   background-color: #bababa;
   color: black;
+  transition: background 0.3s;
   font-size: 25px;
+}
+
+.btn-ac:hover,
+.btn-ngt:hover,
+.btn-per:hover {
+  background: #e8e8e8 radial-gradient(circle, transparent 1%, #e8e8e8 1%)
+    center/15000%;
+}
+
+.btn-ac:active,
+.btn-ngt:active,
+.btn-per:active {
+  background-color: #bababa;
+  background-size: 100%;
+  transition: background 0s;
 }
 
 .btn-dvd,
@@ -74,6 +133,26 @@ td:not(.btn-0) {
 .btn-min,
 .btn-pls,
 .btn-eql {
-  background-color: orange;
+  background-color: #e39400;
+  transition: background 0.3s;
   font-size: 35px;
+}
+
+.btn-dvd:hover,
+.btn-mlt:hover,
+.btn-min:hover,
+.btn-pls:hover,
+.btn-eql:hover {
+  background: #ffba00 radial-gradient(circle, transparent 1%, #ffba00 1%)
+    center/15000%;
+}
+
+.btn-dvd:active,
+.btn-mlt:active,
+.btn-min:active,
+.btn-pls:active,
+.btn-eql:active {
+  background-color: #e39400;
+  background-size: 100%;
+  transition: background 0s;
 }
