@@ -32,8 +32,15 @@ table {
 }
 
 .display {
-  font-size: 100px;
+  font-size: 70px;
   color: white;
+  text-align: right;
+  margin-right: 10px;
+}
+
+/* Set display "0" */
+[contentEditable='false']:empty:not(:focus):before {
+  content: attr(data-text);
 }
 
 td {
@@ -84,6 +91,7 @@ td:not(.btn-0) {
 .btn-8:hover,
 .btn-9:hover,
 .btn-dot:hover {
+  /* ripple effect */
   background: #8c8c8c radial-gradient(circle, transparent 1%, #8c8c8c 1%)
     center/15000%;
 }
@@ -128,30 +136,23 @@ td:not(.btn-0) {
   transition: background 0s;
 }
 
-.btn-dvd,
-.btn-mlt,
-.btn-min,
-.btn-pls,
-.btn-eql {
+.calc {
   background-color: #e39400;
   transition: background 0.3s;
   font-size: 35px;
 }
 
-.btn-dvd:hover,
-.btn-mlt:hover,
-.btn-min:hover,
-.btn-pls:hover,
-.btn-eql:hover {
+.calc.clicked {
+  background-color: #ffba00;
+  font-size: 35px;
+}
+
+.calc:hover {
   background: #ffba00 radial-gradient(circle, transparent 1%, #ffba00 1%)
     center/15000%;
 }
 
-.btn-dvd:active,
-.btn-mlt:active,
-.btn-min:active,
-.btn-pls:active,
-.btn-eql:active {
+.calc:active {
   background-color: #e39400;
   background-size: 100%;
   transition: background 0s;
