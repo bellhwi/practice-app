@@ -47,113 +47,76 @@ td {
   cursor: default;
 }
 
-td:not(.btn-0) {
+td:not(#btn-0) {
   box-sizing: border-box;
   height: 70px;
   width: 70px;
   border-radius: 50%;
-}
-
-td:not(.btn-0) {
   text-align: center;
 }
 
-.btn-0 {
+#btn-0 {
   border-width: 2px 4px;
   border-radius: 40px;
   padding-left: 26px;
+  text-align: left;
 }
 
-.btn-0,
-.btn-1,
-.btn-2,
-.btn-3,
-.btn-4,
-.btn-5,
-.btn-6,
-.btn-7,
-.btn-8,
-.btn-9,
-.btn-dot {
+.btn {
   background-color: #383838;
   transition: background 0.3s;
   font-size: 30px;
 }
 
-.btn-0:hover,
-.btn-1:hover,
-.btn-2:hover,
-.btn-3:hover,
-.btn-4:hover,
-.btn-5:hover,
-.btn-6:hover,
-.btn-7:hover,
-.btn-8:hover,
-.btn-9:hover,
-.btn-dot:hover {
+.btn:hover {
   /* ripple effect */
   background: #8c8c8c radial-gradient(circle, transparent 1%, #8c8c8c 1%)
     center/15000%;
 }
 
-.btn-0:active,
-.btn-1:active,
-.btn-2:active,
-.btn-3:active,
-.btn-4:active,
-.btn-5:active,
-.btn-6:active,
-.btn-7:active,
-.btn-8:active,
-.btn-9:active,
-.btn-dot:active {
+.btn:active {
   background-color: #383838;
   background-size: 100%;
   transition: background 0s;
 }
 
-.btn-ac,
-.btn-ngt,
-.btn-per {
+.btn-fn {
   background-color: #bababa;
   color: black;
   transition: background 0.3s;
   font-size: 25px;
 }
 
-.btn-ac:hover,
-.btn-ngt:hover,
-.btn-per:hover {
+.btn-fn:hover {
   background: #e8e8e8 radial-gradient(circle, transparent 1%, #e8e8e8 1%)
     center/15000%;
 }
 
-.btn-ac:active,
-.btn-ngt:active,
-.btn-per:active {
+.btn-fn:active {
   background-color: #bababa;
   background-size: 100%;
   transition: background 0s;
 }
 
-.calc {
-  background-color: #e39400;
+.btn-calc {
+  background-color: #ffa600;
   transition: background 0.3s;
   font-size: 35px;
 }
 
-.calc.clicked {
-  background-color: #ffba00;
+.btn-calc.clicked {
+  background-color: #fcfcfc;
+  color: #ffa600;
   font-size: 35px;
 }
 
-.calc:hover {
-  background: #ffba00 radial-gradient(circle, transparent 1%, #ffba00 1%)
+.btn-calc:hover {
+  background: #ffc966 radial-gradient(circle, transparent 1%, #ffc966 1%)
     center/15000%;
 }
 
-.calc:active {
-  background-color: #e39400;
+.btn-calc:active {
+  background-color: #ffa600;
   background-size: 100%;
   transition: background 0s;
 }

@@ -17,39 +17,57 @@
       <div class="keypads" id="keypads">
         <table>
           <tr>
-            <td class="btn-ac" onclick="ac()">AC</td>
-            <td class="btn-ngt" onclick="add('8')">+/-</td>
-            <td class="btn-per" onclick="add('8')">%</td>
-            <td class="calc" onclick="add('/')">÷</td>
-          </tr>
-          <tr>
-            <td class="btn-7" onclick="add('7')">7</td>
-            <td class="btn-8" onclick="add('8')">8</td>
-            <td class="btn-9" onclick="add('9')">9</td>
-            <td class="calc" onclick="add('*')">x</td>
-          </tr>
-          <tr>
-            <td class="btn-4" onclick="add('4')">4</td>
-            <td class="btn-5" onclick="add('5')">5</td>
-            <td class="btn-6" onclick="add('6')">6</td>
-            <td class="calc" onclick="add('-')">-</td>
-          </tr>
-          <tr>
-            <td class="btn-1" onclick="add('1')">1</td>
-            <td class="btn-2" onclick="add('2')">2</td>
-            <td class="btn-3" onclick="add('3')">3</td>
+            <td class="btn-fn" onclick="ac()">AC</td>
+            <td class="btn-fn" onclick="sign()">+/-</td>
+            <td class="btn-fn" onclick="percent()">%</td>
             <td
-              class="calc"
-              onclick="add('+', this.getAttribute('class'))"
-              id="calc"
+              class="btn-calc"
+              id="btn-dvd"
+              onclick="add('/', this.getAttribute('id'))"
+            >
+              ÷
+            </td>
+          </tr>
+          <tr>
+            <td class="btn" onclick="add('7')">7</td>
+            <td class="btn" onclick="add('8')">8</td>
+            <td class="btn" onclick="add('9')">9</td>
+            <td
+              class="btn-calc"
+              id="btn-mlt"
+              onclick="add('*', this.getAttribute('id'))"
+            >
+              x
+            </td>
+          </tr>
+          <tr>
+            <td class="btn" onclick="add('4')">4</td>
+            <td class="btn" onclick="add('5')">5</td>
+            <td class="btn" onclick="add('6')">6</td>
+            <td
+              class="btn-calc"
+              id="btn-min"
+              onclick="add('-', this.getAttribute('id'))"
+            >
+              -
+            </td>
+          </tr>
+          <tr>
+            <td class="btn" onclick="add('1')">1</td>
+            <td class="btn" onclick="add('2')">2</td>
+            <td class="btn" onclick="add('3')">3</td>
+            <td
+              class="btn-calc"
+              onclick="add('+', this.getAttribute('id'))"
+              id="btn-pls"
             >
               +
             </td>
           </tr>
           <tr>
-            <td colspan="2" class="btn-0" onclick="add('0')">0</td>
-            <td class="btn-dot" onclick="add('.')">.</td>
-            <td class="calc" onclick="equal()">=</td>
+            <td colspan="2" class="btn" id="btn-0" onclick="add('0')">0</td>
+            <td class="btn" onclick="add('.')">.</td>
+            <td class="btn-calc" onclick="equal()">=</td>
           </tr>
         </table>
       </div>
