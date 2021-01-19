@@ -14,7 +14,7 @@
         contenteditable="false"
         data-text="0"
       ></div>
-      <div class="keypads" id="keypads">
+      <div>
         <table>
           <tr>
             <td class="btn-fn" onclick="ac()">AC</td>
@@ -66,7 +66,7 @@
           </tr>
           <tr>
             <td colspan="2" class="btn" id="btn-0" onclick="add('0')">0</td>
-            <td class="btn" onclick="add('.')">.</td>
+            <td class="btn" id="btn-dot" onclick="add('.')">.</td>
             <td class="btn-calc" onclick="equal()">=</td>
           </tr>
         </table>
