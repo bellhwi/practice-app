@@ -1,6 +1,6 @@
 const display = document.getElementById('display');
 
-let result = [];
+let result = '';
 
 function add(char, id) {
   // Not a number
