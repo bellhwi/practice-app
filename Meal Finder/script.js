@@ -28,8 +28,11 @@ async function getMeal() {
   mealsEl.innerHTML = meals
     .map(
       (meal) => `
-  <div>
+  <div class="meal">
   <img src="${meal.strMealThumb}"></img>
+  <div class="meal-info">
+  <h3>${meal.strMeal}</h3>
+  </div>
   </div>`
     )
     .join('');
